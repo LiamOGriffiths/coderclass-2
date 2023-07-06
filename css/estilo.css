@@ -63,10 +63,116 @@ main{
 }
 .playlist{
     background-color: #846a6a;
+}
+
+.playlist__artistas{
+    display: flex;
+    flex-direction: row;
+    height: 13vw;
+    justify-content: space-evenly;
+}
+
+.caja1{
+    background-color: #b28f8f;
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nosotros__redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem ;
     padding: 1rem;
 }
 
-.playlist__artitas{
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
     display: flex;
-
+    justify-content: space-evenly;
+    text-align: center;
+   /*  position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    }
+  footer a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  
+  .inicio__img{
+    width: 50vw;
+    height: auto;
 }
+.img-eventos{
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.boton{
+    padding: 10px 20px;
+    background-color: #676767;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.playlist {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .playlist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .playlist li img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .playlist li .detalle-play {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .playlist li {
+    font-weight: bold;
+  }
+  
+  .playlist li .artista {
+    font-size: 14px;
+    color: #888;
+  }
+
+    @media (max-width: 600px) {
+        .elemento {
+        display: none;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .inicio {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .text {
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: vertical;}
