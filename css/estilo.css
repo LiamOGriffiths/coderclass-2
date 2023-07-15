@@ -38,6 +38,8 @@ header div ul{
     align-items: center;
 }
 
+/* =====BODY INDEX===== */
+
 .inicio{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -61,52 +63,7 @@ header div ul{
 main{
     padding: 2rem;
 }
-.playlist{
-    background-color: #846a6a;
-}
-
-.playlist__artistas{
-    display: flex;
-    flex-direction: row;
-    height: 13vw;
-    justify-content: space-evenly;
-}
-
-.caja1{
-    background-color: #b28f8f;
-}
-
-.nosotros{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.nosotros__redes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem ;
-    padding: 1rem;
-}
-
-footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-   /*  position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    }
-  footer a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  
-  .inicio__img{
+.inicio__img{
     width: 50vw;
     height: auto;
 }
@@ -125,6 +82,27 @@ footer {
     cursor: pointer;
     font-size: 16px;
 }
+.boton a:hover{
+    color: white;
+}
+
+/* =====PLAYLIST===== */
+
+.playlist{
+    background-color: #846a6a;
+}
+
+.playlist a:hover{
+    color: white;
+}
+
+.playlist__artistas{
+    display: flex;
+    flex-direction: row;
+    height: 13vw;
+    justify-content: space-evenly;
+}
+
 .playlist {
     list-style: none;
     padding: 0;
@@ -157,6 +135,75 @@ footer {
     color: #888;
   }
 
+
+.caja1{
+    background-color: #b28f8f;
+}
+
+/* =====NOSOTROS===== */
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nosotros__redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem ;
+    padding: 1rem;
+}
+.text {
+    width: 70vw;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+  /* ======ARTISTAS====== */
+
+  .artirtas-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-image: url(../images/fotoresi2.jpg);
+  }
+
+  .artistas-flex__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+/* =====FOOTER===== */
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+   /*  position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    }
+  footer a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  footer a:hover{
+     color:gray ;
+  }
+  
+/* =====MEDIASQUERIS===== */
+
     @media (max-width: 600px) {
         .elemento {
         display: none;
@@ -169,10 +216,5 @@ footer {
             flex-direction: column;
         }
     }
-    .text {
-        padding: 10px;
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        resize: vertical;}
+
+
