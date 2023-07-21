@@ -1,0 +1,63 @@
+.tamañofuente{
+    font-size: 1.5rem;
+}
+ 
+.inicio{ 
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+    &__img{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    &__descripcion{
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+
+    &__eventos{
+        grid-column: 1/5;
+        height: 10vw;
+    }
+
+    &__img{
+        width: 50vw;
+        height: auto;
+    }
+}
+
+.img-eventos{
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+main{
+    padding: 2rem;
+}
+.boton{
+    padding: 10px 20px;
+    background-color: #676767;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    & a:hover{
+        color: white;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .inicio {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+

@@ -1,220 +1,193 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-/* =====HEADER===== */
-
-body{
-    background-color: #dadada;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-header img{
-    width: 25vw;
-}
-header div{
-    font-size: 2vw;
-    padding: 1rem;
-    background-color: #c6c7c4;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    }
-
-    header h1{
-        font-size: 10vw;
-    }
-header div ul li a{
-    color:black;
-    
+body {
+  background-color: #dadada;
 }
 
-header div ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    align-items: center;
+header {
+  padding: 0rem 3rem;
+}
+header img {
+  width: 25vw;
+}
+header div {
+  font-size: 2vw;
+  background-color: #c6c7c4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 35px 11px rgba(0, 0, 0, 0.65);
+}
+header div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+}
+header div ul li a {
+  color: black;
+}
+header h1 {
+  font-size: 10vw;
 }
 
-/* =====BODY INDEX===== */
-
-.inicio{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+@media (max-width: 600px) {
+  .elemento {
+    display: none;
+  }
 }
-
-.inicio__img{
-    grid-column: 1/3;
-    grid-row: 1/3;
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  /*  position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
-
-.inicio__descripcion{
-    grid-column: 3/5;
-    grid-row: 1/3;
+footer a {
+  color: #333;
+  text-decoration: none;
 }
-
-.inicio__eventos{
-    grid-column: 1/5;
-    height: 10vw;
-}
-main{
-    padding: 2rem;
-}
-.inicio__img{
-    width: 50vw;
-    height: auto;
-}
-.img-eventos{
-    width: 100%;
-    height: 20vw;
-    object-fit: cover;
-}
-
-.boton{
-    padding: 10px 20px;
-    background-color: #676767;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.boton a:hover{
-    color: white;
-}
-
-/* =====PLAYLIST===== */
-
-.playlist{
-    background-color: #846a6a;
-}
-
-.playlist a:hover{
-    color: white;
-}
-
-.playlist__artistas{
-    display: flex;
-    flex-direction: row;
-    height: 13vw;
-    justify-content: space-evenly;
+footer a:hover {
+  color: gray;
 }
 
 .playlist {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .playlist li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .playlist li img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin-right: 10px;
-  }
-  
-  .playlist li .detalle-play {
+  background-color: #846a6a;
+  list-style: none;
+  padding: 0;
+}
+.playlist a:hover {
+  color: white;
+}
+.playlist__artistas {
+  display: flex;
+  flex-direction: row;
+  height: 13vw;
+  justify-content: space-evenly;
+}
+.playlist li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.playlist li img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.playlist li .detalle-play {
+  display: flex;
+  flex-direction: column;
+}
+.playlist li .artista {
+  font-size: 14px;
+  color: #888;
+}
+
+.caja1 {
+  background-color: #b28f8f;
+}
+
+.tamañofuente {
+  font-size: 1.5rem;
+}
+
+.inicio {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.inicio__img {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.inicio__descripcion {
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+.inicio__eventos {
+  grid-column: 1/5;
+  height: 10vw;
+}
+.inicio__img {
+  width: 50vw;
+  height: auto;
+}
+
+.img-eventos {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+
+main {
+  padding: 2rem;
+}
+
+.boton {
+  padding: 10px 20px;
+  background-color: #676767;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.boton a:hover {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .inicio {
     display: flex;
     flex-direction: column;
   }
-  
-  .playlist li {
-    font-weight: bold;
-  }
-  
-  .playlist li .artista {
-    font-size: 14px;
-    color: #888;
-  }
-
-
-.caja1{
-    background-color: #b28f8f;
+}
+.artirtas-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.artirtas-flex__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-/* =====NOSOTROS===== */
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nosotros__redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
 
-.nosotros{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.nosotros__redes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem ;
-    padding: 1rem;
-}
 .text {
-    width: 70vw;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-
+  width: 70vw;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-  /* ======ARTISTAS====== */
-
-  .artirtas-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    background-image: url(../images/fotoresi2.jpg);
-  }
-
-  .artistas-flex__info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-/* =====FOOTER===== */
-
-footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-   /*  position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    }
-  footer a {
-    color: #333;
-    text-decoration: none;
-  }
-
-  footer a:hover{
-     color:gray ;
-  }
-  
-/* =====MEDIASQUERIS===== */
-
-    @media (max-width: 600px) {
-        .elemento {
-        display: none;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .inicio {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-
+/*# sourceMappingURL=estilo.css.map */

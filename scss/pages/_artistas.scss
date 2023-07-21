@@ -1,0 +1,13 @@
+.artirtas-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+  }

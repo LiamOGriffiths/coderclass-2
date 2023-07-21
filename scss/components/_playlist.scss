@@ -1,0 +1,43 @@
+.playlist {
+    background-color: #846a6a;
+    list-style: none;
+    padding: 0;
+
+    & a:hover{
+        color: white;
+    }
+
+    &__artistas{
+        display: flex;
+        flex-direction: row;
+        height: 13vw;
+        justify-content: space-evenly;
+    }
+    
+    & li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-weight: bold;
+
+        & img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        & .detalle-play{
+            display: flex;
+            flex-direction: column;
+        }
+        & .artista{
+            font-size: 14px;
+            color: #888;
+        }
+    }
+}
+
+.caja1{
+    background-color: #b28f8f;
+}
