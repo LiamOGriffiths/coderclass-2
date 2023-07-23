@@ -1,8 +1,16 @@
 header{
     padding: 0rem 3rem;
 
-    & img{
+    & .logo{
         width: 25vw;
+        filter: drop-shadow(1px 3px 20px);
+        
+        &:hover {
+            transform: scale(1.2);
+            transition-duration: 0.2s;
+            transition-timing-function:ease ;
+
+        }
     }
     & div{
          font-size: 2vw;
@@ -17,10 +25,14 @@ header{
             display: flex;
             flex-direction: column;
             gap: .25rem;
-            align-items: center;
+            align-items: center;    
             
             & li a{
                 color: black;
+
+                &:hover{
+                    color: $color-hover;
+                }
           }
          }
         }
@@ -30,8 +42,30 @@ header{
     }
 }
 
-@media (max-width: 600px) {
-    .elemento {
+@media (max-width: 767px) {
+/*     .elemento {
     display: none;
+    } */
+
+    header h1{
+        display: none;
+    }
+
+    header div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        & ul{
+            flex-direction: row;
+            padding: 1rem;
+            gap: 1rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    header h1{
+        display: none;
     }
 }
