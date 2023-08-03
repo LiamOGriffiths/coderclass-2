@@ -13,9 +13,12 @@ body {
 header {
   padding: 0rem 3rem;
 }
+header h1 {
+  filter: drop-shadow(0px 0px 40px rgb(0, 0, 0));
+}
 header .logo {
   width: 25vw;
-  filter: drop-shadow(1px 3px 20px);
+  filter: drop-shadow(0px 0px 20px rgb(64, 64, 179));
 }
 header .logo:hover {
   transform: scale(1.2);
@@ -36,12 +39,13 @@ header div ul {
   flex-direction: column;
   gap: 0.25rem;
   align-items: center;
+  filter: drop-shadow(0px 20px 20px rgb(0, 0, 0));
 }
 header div ul li a {
   color: black;
 }
 header div ul li a:hover {
-  color: rgb(210, 69, 69);
+  color: rgb(172, 10, 10);
 }
 header h1 {
   font-size: 10vw;
@@ -86,7 +90,7 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: rgb(210, 69, 69);
+  color: rgb(172, 10, 10);
 }
 
 .playlist {
@@ -95,7 +99,7 @@ footer a:hover {
   padding: 0;
 }
 .playlist a:hover {
-  color: rgb(210, 69, 69);
+  color: rgb(172, 10, 10);
 }
 .playlist__artistas {
   display: flex;
@@ -175,7 +179,7 @@ main {
   font-size: 16px;
 }
 .boton a:hover {
-  color: rgb(210, 69, 69);
+  color: rgb(172, 10, 10);
 }
 
 @media (max-width: 767px) {
@@ -229,6 +233,7 @@ main {
   align-items: center;
   gap: 0.5rem;
   padding: 1rem;
+  filter: drop-shadow(0px 20px 20px rgb(0, 0, 0));
 }
 
 .text {
@@ -238,6 +243,7 @@ main {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  filter: drop-shadow(0px 0px 70px rgb(54, 53, 53));
 }
 
 /*# sourceMappingURL=estilo.css.map */
